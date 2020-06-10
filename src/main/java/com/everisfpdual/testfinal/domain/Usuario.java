@@ -16,6 +16,8 @@ import org.springframework.lang.NonNull;
 @Entity
 @Table(name = "users")
 public class Usuario implements Serializable {
+
+	// Variables
 	@Id
 	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -41,6 +43,7 @@ public class Usuario implements Serializable {
 	@NonNull
 	@Size(min = 0, max = 64)
 	private String password;
+
 	private static final long serialVersionUID = 1L;
 
 	// Enunciado: Desarrolla la entidad para obtener los datos de BBDD
